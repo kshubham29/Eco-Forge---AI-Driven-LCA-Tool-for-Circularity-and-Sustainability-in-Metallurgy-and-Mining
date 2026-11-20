@@ -1,0 +1,172 @@
+{
+ "success": true,
+ "inputs": {
+  "recycled_content": 0.0,
+  "grid_intensity_tco2_mwh": 0.7117,
+  "ore_grade_factor": 1.0,
+  "transport_km": 200.0
+ },
+ "model": "SVR (CV R\u00b2 = 0.997 on generated data)",
+ "rows": [
+  {
+   "benchmark": "Tata Steel Ltd (India plants)",
+   "metal": "Steel",
+   "scope": "Company",
+   "published_t_co2_per_t": 2.46,
+   "period": "FY2024-25",
+   "source": "Tata Steel Integrated Report 2025-26, ESG Factsheet p.117 (worldsteel method, with slag credit)",
+   "url": "https://www.tatasteel.com/investors/integrated-report-2025-26/pdf/ESG%20Factsheet.pdf",
+   "note": "Blast furnace route; FY2025-26 value 2.45",
+   "product": "Crude steel, BF-BOF (Indian operations)",
+   "unit": "t CO2 per t crude steel",
+   "emissions_boundary": "Company figure, worldsteel CO2 method (direct + indirect emissions, with by-product/slag credits)",
+   "comparability": "EcoForge default = global worldsteel BF-BOF factor (2.19) + 200 km truck; no slag credit, no plant-specific coke, pellet or power mix.",
+   "ecoforge_lca": 2.202,
+   "ecoforge_ml": 2.342,
+   "ml_range_95": [
+    2.199,
+    2.486
+   ],
+   "error_lca_pct": -10.5,
+   "error_ml_pct": -4.8
+  },
+  {
+   "benchmark": "Tata Steel NINL (Odisha)",
+   "metal": "Steel",
+   "scope": "Company",
+   "published_t_co2_per_t": 2.53,
+   "period": "FY2024-25",
+   "source": "Tata Steel Integrated Report 2025-26, ESG Factsheet p.117",
+   "url": "https://www.tatasteel.com/investors/integrated-report-2025-26/pdf/ESG%20Factsheet.pdf",
+   "note": "Blast furnace route",
+   "product": "Crude steel, single BF-BOF plant",
+   "unit": "t CO2 per t crude steel",
+   "emissions_boundary": "Company figure, worldsteel CO2 method (direct + indirect, with by-product credits)",
+   "comparability": "Same EcoForge default as above; one plant, so local raw-material and power mix matter more.",
+   "ecoforge_lca": 2.202,
+   "ecoforge_ml": 2.342,
+   "ml_range_95": [
+    2.199,
+    2.486
+   ],
+   "error_lca_pct": -12.9,
+   "error_ml_pct": -7.4
+  },
+  {
+   "benchmark": "India steel sector average",
+   "metal": "Steel",
+   "scope": "National",
+   "published_t_co2_per_t": 2.54,
+   "period": "2023-24",
+   "source": "Ministry of Steel, Rajya Sabha Unstarred Question 1429, answered 06-12-2024",
+   "url": "https://steel.gov.in/sites/default/files/ru%201429_0.pdf",
+   "note": "All routes incl. coal-based DRI",
+   "product": "Crude steel, all routes (BF-BOF, coal DRI, scrap EAF/IF)",
+   "unit": "t CO2 per t crude steel",
+   "emissions_boundary": "National average reported to Parliament; calculation boundary not detailed",
+   "comparability": "EcoForge default models BF-BOF only; the national mix includes coal-based DRI (higher) and scrap routes (lower).",
+   "ecoforge_lca": 2.202,
+   "ecoforge_ml": 2.342,
+   "ml_range_95": [
+    2.199,
+    2.486
+   ],
+   "error_lca_pct": -13.3,
+   "error_ml_pct": -7.8
+  },
+  {
+   "benchmark": "Vedanta Aluminium",
+   "metal": "Aluminium",
+   "scope": "Company",
+   "published_t_co2_per_t": 17.01,
+   "period": "FY2024-25",
+   "source": "Vedanta Aluminium press release, 3 Nov 2025 (FY25 ESG disclosures)",
+   "url": "https://vedantaaluminium.com/media/press-releases/list/vedanta-aluminium-powers-indias-net-zero-journey-with-8-96-drop-in-ghg-intensity-1500-mw-renewable-plan-and-100-fly-ash-utilization/",
+   "note": "Uses 1.57 billion units of renewable power",
+   "product": "Primary aluminium (company aluminium business)",
+   "unit": "t CO2e per t aluminium",
+   "emissions_boundary": "Company-reported GHG intensity for FY25; exact upstream coverage (e.g. alumina refining) not stated",
+   "comparability": "Vedanta uses captive coal plus about 1.57 billion units of renewable power; EcoForge uses the CEA grid average and the IAI factor.",
+   "ecoforge_lca": 16.112,
+   "ecoforge_ml": 15.855,
+   "ml_range_95": [
+    15.209,
+    16.501
+   ],
+   "error_lca_pct": -5.3,
+   "error_ml_pct": -6.8
+  },
+  {
+   "benchmark": "Hindalco (aluminium)",
+   "metal": "Aluminium",
+   "scope": "Company",
+   "published_t_co2_per_t": 19.48,
+   "period": "9 months FY2024-25",
+   "source": "Hindalco Q3 FY25 earnings call transcript",
+   "url": "https://hindalco.com/upload/pdf/earnings-call-transcript-signed.pdf",
+   "note": "Aluminium-specific GHG; smelters run on captive coal power",
+   "product": "Primary aluminium",
+   "unit": "t CO2e per t aluminium",
+   "emissions_boundary": "Aluminium-specific GHG intensity for 9 months (Apr-Dec 2024) from an earnings call; boundary not detailed",
+   "comparability": "Partial year; smelters run mainly on captive coal power, while EcoForge's default is the national grid average.",
+   "ecoforge_lca": 16.112,
+   "ecoforge_ml": 15.855,
+   "ml_range_95": [
+    15.209,
+    16.501
+   ],
+   "error_lca_pct": -17.3,
+   "error_ml_pct": -18.6
+  },
+  {
+   "benchmark": "IAI global primary aluminium",
+   "metal": "Aluminium",
+   "scope": "Global",
+   "published_t_co2_per_t": 14.8,
+   "period": "2023",
+   "source": "International Aluminium Institute, press release 13 Dec 2024",
+   "url": "https://international-aluminium.org/global-aluminium-industry-greenhouse-gas-emissions-intensity-reduction-continues-with-total-emissions-below-2020-peak",
+   "note": "Global average across all smelters",
+   "product": "Primary aluminium, global average",
+   "unit": "t CO2e per t aluminium",
+   "emissions_boundary": "IAI global GHG intensity for 2023 (headline figure)",
+   "comparability": "Same publisher family as EcoForge's IAI factor (16.1, LCI basis), so this check is not fully independent; boundaries may differ.",
+   "ecoforge_lca": 16.112,
+   "ecoforge_ml": 15.855,
+   "ml_range_95": [
+    15.209,
+    16.501
+   ],
+   "error_lca_pct": 8.9,
+   "error_ml_pct": 7.1
+  }
+ ],
+ "summary": {
+  "lca": {
+   "mean_abs_error_pct": 11.4,
+   "within_10pct": 2,
+   "count": 6
+  },
+  "ml": {
+   "mean_abs_error_pct": 8.8,
+   "within_10pct": 5,
+   "count": 6
+  }
+ },
+ "what_if": {
+  "benchmark": "Hindalco (aluminium)",
+  "published": 19.48,
+  "input_changed": "Power emission factor 0.7117 -> 0.925 t CO2/MWh (coal-heavy captive power)",
+  "ecoforge_ml": 18.65,
+  "error_pct": -4.3
+ },
+ "scope": "Preliminary aggregate benchmark comparison: six published company, national and industry averages for steel and aluminium only. It does not establish accuracy for individual plants, for copper or magnesium, or for other operating conditions.",
+ "notes": [
+  "EcoForge uses global cited factors with India's grid; nothing was tuned to match these numbers.",
+  "Indian steel is higher than EcoForge mainly because of coal-based DRI, less pellet/sinter use and less scrap (Ministry of Steel).",
+  "Hindalco is higher because its smelters run on captive coal power; Vedanta is lower thanks to 1.57 billion units of renewable power.",
+  "Company figures differ in scope (plant boundary, slag credit, power source, reporting period); each row lists its boundary and how EcoForge's default scenario differs.",
+  "The IAI global figure comes from the same publisher as EcoForge's aluminium factor, so it is not a fully independent check.",
+  "EcoForge's validation run uses 200 km of truck transport (16.11 t for aluminium); the Calculator default uses 500 + 300 + 200 km over three legs (16.15 t)."
+ ]
+}

@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+
+
+@layer base {
+  :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+    }
+  .dark {
+        --background: 0 0% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 9%;
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 63.9%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+        --ring: 0 0% 83.1%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+}
+
+/* ---- small interactions: tab fade-in, bars that grow and slide, cards that lift on hover ---- */
+[role="tabpanel"][data-state="active"] { animation: ef-fade 0.25s ease-out; }
+@keyframes ef-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.ef-bar { transition: width 0.6s ease, left 0.6s ease; transform-origin: left center; animation: ef-grow 0.7s ease-out; }
+@keyframes ef-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.ef-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.ef-lift:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); }
+@media (prefers-reduced-motion: reduce) {
+  [role="tabpanel"][data-state="active"], .ef-bar { animation: none; }
+  .ef-bar, .ef-lift { transition: none; }
+  .ef-lift:hover { transform: none; }
+}
+
+/* ---- whole-app polish: pages rise in, nav underline, table row hover, hero motion, button press ---- */
+main > div > * > * { animation: ef-rise 0.5s ease-out both; }
+main > div > * > *:nth-child(2) { animation-delay: 0.06s; }
+main > div > * > *:nth-child(3) { animation-delay: 0.12s; }
+main > div > * > *:nth-child(4) { animation-delay: 0.18s; }
+main > div > * > *:nth-child(n+5) { animation-delay: 0.24s; }
+@keyframes ef-rise { from { opacity: 0.25; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+.ef-nav { position: relative; }
+.ef-nav::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; border-radius: 2px;
+  background: #16a34a; transform: scaleX(0); transform-origin: center; transition: transform 0.25s ease; }
+.ef-nav:hover::after { transform: scaleX(1); }
+
+tbody tr { transition: background-color 0.15s ease; }
+tbody tr:hover { background-color: rgba(22, 163, 74, 0.06); }
+
+.ef-lift svg { transition: transform 0.25s ease; }
+.ef-lift:hover svg { transform: scale(1.15); }
+
+.ef-float { animation: ef-float 4s ease-in-out infinite; }
+@keyframes ef-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.ef-spin { animation: ef-spin 10s linear infinite; }
+@keyframes ef-spin { to { transform: rotate(360deg); } }
+.ef-shine { background: linear-gradient(90deg, #16a34a, #0ea5e9, #16a34a); background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text; color: transparent; animation: ef-shine 6s linear infinite; }
+@keyframes ef-shine { to { background-position: 200% center; } }
+.ef-pulse { animation: ef-pulse 2.4s ease-in-out infinite; }
+@keyframes ef-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.35); } 50% { box-shadow: 0 0 0 10px rgba(22, 163, 74, 0); } }
+
+button:not(:disabled):active { transform: scale(0.97); }
+
+@media (prefers-reduced-motion: reduce) {
+  main > div > * > *, .ef-float, .ef-spin, .ef-shine, .ef-pulse { animation: none !important; }
+  .ef-nav::after, tbody tr, .ef-lift svg { transition: none; }
+  button:not(:disabled):active, .ef-lift:hover svg { transform: none; }
+}
+
+/* ---- one slider style for the whole app: thin light track, green fill up to the handle, white round handle ---- */
+input[type="range"] {
+  -webkit-appearance: none; appearance: none; height: 6px; border-radius: 9999px; cursor: pointer; outline: none;
+  background: linear-gradient(to right, #16a34a 0%, #16a34a var(--fill, 50%), #e5e7eb var(--fill, 50%), #e5e7eb 100%);
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 50%;
+  background: #fff; border: 3px solid #16a34a; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25); transition: transform 0.15s ease;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 3px solid #16a34a; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+input[type="range"]::-moz-range-track { background: transparent; }
+input[type="range"]:hover::-webkit-slider-thumb, input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.2); }
+input[type="range"]:focus-visible { box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.25); }
+
+/* route map: the dashed route line flows from mine to market */
+.ef-dash { animation: ef-dash 1.2s linear infinite; }
+@keyframes ef-dash { to { stroke-dashoffset: -20; } }
+@media (prefers-reduced-motion: reduce) { .ef-dash { animation: none; } }

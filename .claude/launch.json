@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lca-backend",
+      "runtimeExecutable": "backend/venv/Scripts/python.exe",
+      "runtimeArgs": ["-m", "uvicorn", "server:app", "--host", "127.0.0.1", "--port", "8000"],
+      "port": 8000,
+      "cwd": "backend"
+    },
+    {
+      "name": "lca-frontend",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "set BROWSER=none&& npm start"],
+      "port": 3000,
+      "cwd": "frontend"
+    }
+  ]
+}

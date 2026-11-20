@@ -1,0 +1,29 @@
+metal,fiscal_year,production_million_tonnes,primary_gwp_t_co2e_per_tonne,estimated_national_co2e_mt,source
+Aluminium (Primary),2020-21,3.60,16.1,57.96,Ministry of Mines
+Aluminium (Primary),2022-23,4.073,16.1,65.58,Ministry of Mines
+Aluminium (Primary),2023-24,4.159,16.1,66.96,Ministry of Mines
+Aluminium (Primary),2024-25,4.20,16.1,67.62,Ministry of Mines
+Aluminium (Primary),2025-26,4.257,16.1,68.54,Ministry of Mines monthly summary March 2026 (provisional; Apr-Mar 42.57 lakh t)
+Crude Steel,2019-20,109.137,2.19,239.01,Ministry of Steel / worldsteel
+Crude Steel,2021-22,120.00,2.19,262.80,Ministry of Steel / worldsteel
+Crude Steel,2022-23,127.197,2.19,278.56,Ministry of Steel / worldsteel
+Crude Steel,2023-24,144.299,2.19,316.01,Ministry of Steel / worldsteel
+Crude Steel,2024-25,152.180,2.19,333.27,Ministry of Steel / JPC
+Crude Steel,2025-26,170.150,2.19,372.63,"Ministry of Steel, Overview of Steel Sector July 2026 (JPC)"
+Refined Copper,2022-23,0.555,3.83,2.13,Ministry of Mines
+Refined Copper,2023-24,0.509,3.83,1.95,Ministry of Mines
+Refined Copper,2024-25,0.497,3.83,1.90,Ministry of Mines
+Iron Ore,2016-17,192.00,,,Ministry of Mines / IBM
+Iron Ore,2017-18,210.00,,,Ministry of Mines / IBM
+Iron Ore,2021-22,253.60,,,Ministry of Mines / IBM
+Iron Ore,2023-24,274.00,,,Ministry of Mines / IBM
+Iron Ore,2024-25,289.00,,,Ministry of Mines / IBM
+Iron Ore,2025-26 (Apr-Feb),278.01,,,Ministry of Mines monthly summary Feb 2026 (provisional)
+Bauxite,2018-19,23.69,,,Indian Bureau of Mines (IMYB)
+Bauxite,2019-20,21.82,,,Indian Bureau of Mines (IMYB)
+Bauxite,2020-21,20.38,,,Indian Bureau of Mines (IMYB)
+Bauxite,2021-22,22.49,,,Indian Bureau of Mines (IMYB)
+Bauxite,2022-23,23.84,,,Indian Bureau of Mines (IMYB)
+Bauxite,2023-24,23.93,,,Indian Bureau of Mines (IMYB)
+Bauxite,2024-25,24.70,,,Indian Bureau of Mines (IMYB)
+Bauxite,2025-26 (Apr-Feb),23.58,,,Ministry of Mines monthly summary Feb 2026 (provisional)

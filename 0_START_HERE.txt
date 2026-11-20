@@ -1,0 +1,25 @@
+EcoForge - how to open and run in VS Code
+==========================================
+
+You need: Python 3.11 or newer, Node.js 18 or newer, and VS Code.
+
+1. Unzip this folder (for example to Desktop\LCA-main).
+2. VS Code -> File -> Open Folder -> choose the LCA-main folder.
+3. Double-click START_APP.bat. The first time it installs everything (5-10 min, needs internet).
+   After that it starts at once, with no install. That's all you need each time.
+4. Other ways to run it (after the first install):
+     - in VS Code: Terminal -> Run Task -> "Start App (Backend + Frontend)", or
+     - two VS Code terminals:
+         Terminal 1:  cd backend
+                      venv\Scripts\python -m uvicorn server:app --port 8000
+         Terminal 2:  cd frontend
+                      npm start
+5. Wait for "Compiled successfully!", then open http://localhost:3000
+   (Backend API docs: http://localhost:8000/docs)
+
+Tests (optional):
+   cd backend   ->  venv\Scripts\python -m pytest tests -q
+   cd frontend  ->  npx craco test --watchAll=false
+
+Reproduce every number in the report:
+   cd backend   ->  venv\Scripts\python reproduce_results.py

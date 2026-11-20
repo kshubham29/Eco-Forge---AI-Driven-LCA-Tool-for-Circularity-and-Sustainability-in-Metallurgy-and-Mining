@@ -1,0 +1,45 @@
+name,operator,metal,type,state,lat,lon,capacity_mtpa,capacity_unit,status
+Bhilai Steel Plant,SAIL,Steel,Integrated steel plant,Chhattisgarh,21.19,81.38,7.0,crude steel,Operating
+Bokaro Steel Plant,SAIL,Steel,Integrated steel plant,Jharkhand,23.65,86.15,4.6,crude steel,Operating
+Rourkela Steel Plant,SAIL,Steel,Integrated steel plant,Odisha,22.21,84.88,4.5,crude steel,Operating
+Durgapur Steel Plant,SAIL,Steel,Integrated steel plant,West Bengal,23.55,87.25,2.2,crude steel,Operating
+IISCO Steel Plant Burnpur,SAIL,Steel,Integrated steel plant,West Bengal,23.65,86.93,2.5,crude steel,Operating
+Tata Steel Jamshedpur,Tata Steel,Steel,Integrated steel plant,Jharkhand,22.79,86.20,11.0,crude steel,Operating
+Tata Steel Kalinganagar,Tata Steel,Steel,Integrated steel plant,Odisha,20.97,86.00,8.0,crude steel,Operating
+Tata Steel Meramandali,Tata Steel,Steel,Integrated steel plant,Odisha,20.83,85.17,5.6,crude steel,Operating
+JSW Vijayanagar,JSW Steel,Steel,Integrated steel plant,Karnataka,15.18,76.67,12.0,crude steel,Operating
+JSW Dolvi,JSW Steel,Steel,Integrated steel plant,Maharashtra,18.70,73.03,10.0,crude steel,Operating
+AM/NS Hazira,ArcelorMittal Nippon Steel India,Steel,Integrated steel plant,Gujarat,21.10,72.65,9.0,crude steel,Operating
+JSPL Angul,Jindal Steel & Power,Steel,Integrated steel plant,Odisha,20.84,85.10,6.0,crude steel,Operating
+JSPL Raigarh,Jindal Steel & Power,Steel,Integrated steel plant,Chhattisgarh,21.90,83.40,3.6,crude steel,Operating
+Visakhapatnam Steel Plant,RINL,Steel,Integrated steel plant,Andhra Pradesh,17.61,83.20,7.3,crude steel,Operating
+NMDC Nagarnar Steel Plant,NMDC Steel,Steel,Integrated steel plant,Chhattisgarh,19.17,82.02,3.0,crude steel,Operating
+Vedanta Jharsuguda,Vedanta,Aluminium,Aluminium smelter,Odisha,21.82,84.00,1.8,aluminium,Operating
+BALCO Korba,Vedanta (BALCO),Aluminium,Aluminium smelter,Chhattisgarh,22.37,82.70,0.57,aluminium,Operating
+NALCO Angul Smelter,NALCO,Aluminium,Aluminium smelter,Odisha,20.82,85.08,0.46,aluminium,Operating
+Hindalco Aditya (Lapanga),Hindalco,Aluminium,Aluminium smelter,Odisha,21.73,84.00,0.36,aluminium,Operating
+Hindalco Mahan,Hindalco,Aluminium,Aluminium smelter,Madhya Pradesh,24.17,82.40,0.36,aluminium,Operating
+Hindalco Renukoot,Hindalco,Aluminium,Aluminium smelter,Uttar Pradesh,24.21,83.03,0.35,aluminium,Operating
+Hindalco Hirakud,Hindalco,Aluminium,Aluminium smelter,Odisha,21.52,83.87,0.21,aluminium,Operating
+NALCO Damanjodi Refinery,NALCO,Aluminium,Alumina refinery,Odisha,18.76,82.92,2.1,alumina,Operating
+Vedanta Lanjigarh Refinery,Vedanta,Aluminium,Alumina refinery,Odisha,19.71,83.40,2.0,alumina,Operating
+Utkal Alumina Refinery,Hindalco,Aluminium,Alumina refinery,Odisha,19.27,83.08,2.0,alumina,Operating
+Hindalco Muri Refinery,Hindalco,Aluminium,Alumina refinery,Jharkhand,23.37,85.86,0.45,alumina,Operating
+Hindalco Belagavi Refinery,Hindalco,Aluminium,Alumina refinery,Karnataka,15.85,74.50,0.35,alumina,Operating
+Birla Copper Dahej,Hindalco,Copper,Copper smelter,Gujarat,21.69,72.58,0.5,refined copper,Operating
+Kutch Copper Mundra,Adani Enterprises,Copper,Copper smelter,Gujarat,22.84,69.70,0.5,refined copper,Operating
+Indian Copper Complex Ghatsila,Hindustan Copper,Copper,Copper smelter,Jharkhand,22.58,86.48,,refined copper,Operating
+Sterlite Copper Thoothukudi,Vedanta,Copper,Copper smelter,Tamil Nadu,8.80,78.13,0.4,refined copper,Closed since 2018
+Malanjkhand Copper Mine,Hindustan Copper,Copper,Copper mine,Madhya Pradesh,22.03,80.70,,copper ore,Operating
+Khetri Copper Complex,Hindustan Copper,Copper,Copper mine,Rajasthan,28.00,75.79,,copper ore,Operating
+Bailadila Iron Ore Mines,NMDC,Steel,Iron ore mine,Chhattisgarh,18.60,81.22,,iron ore,Operating
+Dalli-Rajhara Mines,SAIL,Steel,Iron ore mine,Chhattisgarh,20.58,81.08,,iron ore,Operating
+Barbil-Joda Mining Belt,Several operators,Steel,Iron ore mine,Odisha,22.10,85.38,,iron ore,Operating
+Noamundi Iron Mine,Tata Steel,Steel,Iron ore mine,Jharkhand,22.16,85.53,,iron ore,Operating
+Kiriburu-Meghahatuburu Mines,SAIL,Steel,Iron ore mine,Jharkhand,22.10,85.27,,iron ore,Operating
+Donimalai Iron Ore Mine,NMDC,Steel,Iron ore mine,Karnataka,15.07,76.60,,iron ore,Operating
+Goa Iron Ore Belt,Several operators,Steel,Iron ore mine,Goa,15.60,74.00,,iron ore,Partly operating
+Panchpatmali Bauxite Mine,NALCO,Aluminium,Bauxite mine,Odisha,18.80,82.98,,bauxite,Operating
+Baphlimali Bauxite Mine,Hindalco (Utkal),Aluminium,Bauxite mine,Odisha,19.30,83.20,,bauxite,Operating
+Lohardaga Bauxite Mines,Hindalco,Aluminium,Bauxite mine,Jharkhand,23.43,84.68,,bauxite,Operating
+Mainpat Bauxite Mines,BALCO,Aluminium,Bauxite mine,Chhattisgarh,22.82,83.30,,bauxite,Operating

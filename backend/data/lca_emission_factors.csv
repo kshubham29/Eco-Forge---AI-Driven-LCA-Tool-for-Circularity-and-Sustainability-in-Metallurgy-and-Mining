@@ -1,0 +1,13 @@
+metal,route,energy_GJ_per_tonne,gwp_t_co2e_per_tonne,water_m3_per_tonne,recycled_content_pct,recyclability_pct,source_key
+Aluminium,Primary,155,16.1,10.5,0,95,IAI-2022
+Aluminium,Recycled,12,0.55,1.5,100,95,IAI-2022
+Aluminium,Hybrid (50%),83.5,8.3,6,50,95,derived
+Steel,Primary (BF-BOF),22.7,2.19,28.6,0,88,worldsteel-2021
+Steel,Recycled (EAF),9.1,0.67,9,90,88,worldsteel-2021
+Steel,Hybrid (50%),15.9,1.43,18.8,50,88,derived
+Copper,Primary,42,3.83,72,0,90,ICA-2021
+Copper,Recycled,13,0.8,20,95,90,ICA-2021
+Copper,Hybrid (50%),27.5,2.31,46,50,90,derived
+Magnesium,Primary (Pidgeon),366,28,25,0,85,Ehrenberger-2013
+Magnesium,Recycled,10,0.6,2,100,85,Ehrenberger-2013
+Magnesium,Hybrid (50%),188,14.3,13.5,50,85,derived

@@ -1,0 +1,280 @@
+{
+ "rows": 2000,
+ "train_rows": 1600,
+ "test_rows": 400,
+ "generated": true,
+ "generator": "build_dataset(n_per_metal=500, seed=7)",
+ "protocol": "Generated data (2,000 scenarios). 80/20 split stratified by metal (random_state=42); Random Forests fitted on the training rows only; scores on the 400 held-out rows.",
+ "hide_one": {
+  "recycled_content": {
+   "mape": 22.792242716487436,
+   "r2": 0.9903805784932368,
+   "within_10pct": 79.0,
+   "range_coverage_pct": 93.75
+  },
+  "ore_grade_factor": {
+   "mape": 13.18336121814333,
+   "r2": 0.262904811413154,
+   "within_10pct": 41.75,
+   "range_coverage_pct": 96.5
+  },
+  "grid_intensity_tco2_mwh": {
+   "mape": 7.04886700423325,
+   "r2": 0.8663153042699859,
+   "within_10pct": 74.75,
+   "range_coverage_pct": 96.25
+  },
+  "energy_gj": {
+   "mape": 3.3768840497725745,
+   "r2": 0.9968313540709284,
+   "within_10pct": 97.5,
+   "range_coverage_pct": 96.5
+  },
+  "electricity_mwh": {
+   "mape": 3.5652974917907523,
+   "r2": 0.9970326348027579,
+   "within_10pct": 98.0,
+   "range_coverage_pct": 96.25
+  },
+  "water_m3": {
+   "mape": 4.865773805865474,
+   "r2": 0.9934238247557687,
+   "within_10pct": 91.0,
+   "range_coverage_pct": 95.75
+  },
+  "gwp_t_co2e": {
+   "mape": 4.65910452454127,
+   "r2": 0.9943033503270251,
+   "within_10pct": 89.5,
+   "range_coverage_pct": 95.0
+  }
+ },
+ "only_recycled_known": {
+  "energy_gj": {
+   "mape": 3.8988847424353725,
+   "r2": 0.9942688976417167,
+   "within_10pct": 94.5,
+   "range_coverage_pct": 95.0
+  },
+  "electricity_mwh": {
+   "mape": 3.2461878690874983,
+   "r2": 0.9967379767357608,
+   "within_10pct": 99.25,
+   "range_coverage_pct": 94.5
+  },
+  "water_m3": {
+   "mape": 6.615732811441993,
+   "r2": 0.9862801057055426,
+   "within_10pct": 76.5,
+   "range_coverage_pct": 95.0
+  },
+  "gwp_t_co2e": {
+   "mape": 16.673957571271742,
+   "r2": 0.9292821363941401,
+   "within_10pct": 36.75,
+   "range_coverage_pct": 97.25
+  }
+ },
+ "patterns": [
+  {
+   "pattern": "All drivers known (scrap %, ore, grid)",
+   "known": [
+    "recycled_content",
+    "ore_grade_factor",
+    "grid_intensity_tco2_mwh",
+    "transport_km"
+   ],
+   "targets": {
+    "energy_gj": {
+     "mape": 3.092322210997855,
+     "r2": 0.9971890732881014,
+     "within_10pct": 98.75,
+     "range_coverage_pct": 94.5
+    },
+    "electricity_mwh": {
+     "mape": 2.962486882718747,
+     "r2": 0.9973884038813355,
+     "within_10pct": 99.75,
+     "range_coverage_pct": 92.5
+    },
+    "water_m3": {
+     "mape": 4.8101064435726,
+     "r2": 0.9936279002015326,
+     "within_10pct": 89.25,
+     "range_coverage_pct": 93.25
+    },
+    "gwp_t_co2e": {
+     "mape": 5.102529647926566,
+     "r2": 0.9931777095054817,
+     "within_10pct": 89.25,
+     "range_coverage_pct": 96.0
+    }
+   }
+  },
+  {
+   "pattern": "Scrap % and grid known",
+   "known": [
+    "recycled_content",
+    "grid_intensity_tco2_mwh",
+    "transport_km"
+   ],
+   "targets": {
+    "ore_grade_factor": {
+     "mape": 16.639533380663394,
+     "r2": -0.10996675540869383,
+     "within_10pct": 29.75,
+     "range_coverage_pct": 98.75
+    },
+    "energy_gj": {
+     "mape": 3.9058986662820647,
+     "r2": 0.9943106505609935,
+     "within_10pct": 94.25,
+     "range_coverage_pct": 94.25
+    },
+    "electricity_mwh": {
+     "mape": 3.2605208532721717,
+     "r2": 0.9968301061361144,
+     "within_10pct": 99.25,
+     "range_coverage_pct": 92.25
+    },
+    "water_m3": {
+     "mape": 6.769172757635197,
+     "r2": 0.9863669416629491,
+     "within_10pct": 74.5,
+     "range_coverage_pct": 95.75
+    },
+    "gwp_t_co2e": {
+     "mape": 6.014844972558795,
+     "r2": 0.9910643471157803,
+     "within_10pct": 83.0,
+     "range_coverage_pct": 96.5
+    }
+   }
+  },
+  {
+   "pattern": "Energy, electricity and water known",
+   "known": [
+    "energy_gj",
+    "electricity_mwh",
+    "water_m3",
+    "transport_km"
+   ],
+   "targets": {
+    "recycled_content": {
+     "mape": 27.598652639038633,
+     "r2": 0.9872381263266539,
+     "within_10pct": 73.75,
+     "range_coverage_pct": 94.75
+    },
+    "ore_grade_factor": {
+     "mape": 13.736671380310646,
+     "r2": 0.17561106676877603,
+     "within_10pct": 41.75,
+     "range_coverage_pct": 97.75
+    },
+    "grid_intensity_tco2_mwh": {
+     "mape": 22.655521221269936,
+     "r2": -0.14166145650833406,
+     "within_10pct": 25.25,
+     "range_coverage_pct": 98.0
+    },
+    "gwp_t_co2e": {
+     "mape": 16.256147488946926,
+     "r2": 0.9277807029000109,
+     "within_10pct": 35.25,
+     "range_coverage_pct": 97.25
+    }
+   }
+  },
+  {
+   "pattern": "Only energy known",
+   "known": [
+    "energy_gj",
+    "transport_km"
+   ],
+   "targets": {
+    "recycled_content": {
+     "mape": 23.34294573609364,
+     "r2": 0.9805712547363507,
+     "within_10pct": 66.75,
+     "range_coverage_pct": 94.5
+    },
+    "ore_grade_factor": {
+     "mape": 15.547209125255346,
+     "r2": -0.04650111957083247,
+     "within_10pct": 34.5,
+     "range_coverage_pct": 98.25
+    },
+    "grid_intensity_tco2_mwh": {
+     "mape": 23.117284550755542,
+     "r2": -0.20162711017896262,
+     "within_10pct": 26.75,
+     "range_coverage_pct": 98.5
+    },
+    "electricity_mwh": {
+     "mape": 4.496397212401629,
+     "r2": 0.9948442844743398,
+     "within_10pct": 94.25,
+     "range_coverage_pct": 98.5
+    },
+    "water_m3": {
+     "mape": 5.586113798764588,
+     "r2": 0.9894644932457658,
+     "within_10pct": 87.0,
+     "range_coverage_pct": 96.0
+    },
+    "gwp_t_co2e": {
+     "mape": 16.331278740500093,
+     "r2": 0.9331794105734447,
+     "within_10pct": 35.0,
+     "range_coverage_pct": 98.25
+    }
+   }
+  },
+  {
+   "pattern": "Only scrap % known",
+   "known": [
+    "recycled_content",
+    "transport_km"
+   ],
+   "targets": {
+    "ore_grade_factor": {
+     "mape": 16.191075583436525,
+     "r2": -0.11359350708699179,
+     "within_10pct": 32.75,
+     "range_coverage_pct": 98.5
+    },
+    "grid_intensity_tco2_mwh": {
+     "mape": 21.870194781985653,
+     "r2": -0.06253811151332433,
+     "within_10pct": 25.75,
+     "range_coverage_pct": 98.25
+    },
+    "energy_gj": {
+     "mape": 3.8988847424353725,
+     "r2": 0.9942688976417167,
+     "within_10pct": 94.5,
+     "range_coverage_pct": 95.0
+    },
+    "electricity_mwh": {
+     "mape": 3.2461878690874983,
+     "r2": 0.9967379767357608,
+     "within_10pct": 99.25,
+     "range_coverage_pct": 94.5
+    },
+    "water_m3": {
+     "mape": 6.615732811441993,
+     "r2": 0.9862801057055426,
+     "within_10pct": 76.5,
+     "range_coverage_pct": 95.0
+    },
+    "gwp_t_co2e": {
+     "mape": 16.673957571271742,
+     "r2": 0.9292821363941401,
+     "within_10pct": 36.75,
+     "range_coverage_pct": 97.25
+    }
+   }
+  }
+ ]
+}
